@@ -1,0 +1,124 @@
+body {
+	font-family: "Noto Serif", "Book Antiqua", Palatino, serif;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span.code {
+	font-family: calibri, sans-serif;
+	padding-left: 2px;
+	padding-right: 2px;
+	}
+
+span.first-mention {
+	font-family: calibri, sans-serif;
+}
+
+div.contents {
+
+}
+
+div.contents.level-1 {
+	font-size: x-large;
+}
+
+div.contents.level-2 {
+	margin-left: 20px;
+}
+
+div.contents.level-3 {
+	margin-left: 40px;
+	font-size: small;
+}
+
+div.contents.level-4 {
+	margin-left: 40px;
+	font-size: small;
+}
+
+div.code {
+	font-family: calibri, sans-serif;
+	font-size: large;
+	border: solid 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 30px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 22px;
+	background-color: Wheat;
+	display: inline-block;
+}
+
+div.shaded {
+	background-color: BurlyWood;
+	width: '100%';
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.quote {
+	margin-left: 30px;
+	padding: 10px;
+}
+
+div.url {
+	font-family: sans-serif;
+	margin-left: 30px;
+}
+
+img {
+	margin-left: 30px;
+	vertical-align: top;
+}
+
+span.define {
+	font-weight: bold;
+}
+
+h1 {
+	font-weight: bolder;
+	color: white;
+	background-color: CornflowerBlue;
+	margin-left: -50px;
+	margin-right: -50px;
+	padding: 15px;
+}
+
+h2 { 
+	color: white;
+	background-color: DarkBlue;
+	padding: 10px;
+	margin-left: -25px;
+}
+
+h3, h4 {
+	color: white;
+	background-color: DarkCyan;
+	margin-left: -10px;
+	padding: 5px;
+}
+
+table.data {
+	border: solid;
+	margin-left: 50px;
+}
+
+th {
+	color: white;
+	background-color: blue;
+}
+
+td, th {
+	border: solid 1px;
+	padding: 5px;
+}
