@@ -2204,7 +2204,7 @@ Using Microsoft Excel (or Your Favorite Alternative)</h2>
 
 <p>We'll start generating numbers in B7:</p>
 
-<div class="code">=MOD((B6*<em>b</em>2)+<em>b</em>3,<em>b</em>4)</div>
+<div class="code">=MOD((B6*$B$2)+$B$3,$B$4)</div>
 
 <div class="shaded">
 <p>If you're astute you'll notice that the above formula has more $ signs than it needs.  Since we're going to fill this formula down, we certainly need to $ the row numbers on B2, B3, and B4.  Since we're not going to copy the formula side-to-side, it doesn't really matter whether we $ the B.  So why did I do it?  Two reasons.</p>
@@ -4016,7 +4016,7 @@ If the digit to our right is less than the digit above it (which means its dial 
 
 <p>Now we can use <span class="code">INDEX()</span> to get a description of each card.  We'll use <span class="code">INDEX()</span> once to get the rank, use <span class="code">INDEX()</span> again to get the suit, and concatenate them with "of."  The formula in C2 should be</p>
 
-<div class="code">=INDEX($F$2:$F$14,B2)&amp;" of "&amp;INDEX(<em>e</em>2:<em>e</em>5,A2)</div>
+<div class="code">=INDEX($F$2:$F$14,B2)&amp;" of "&amp;INDEX($E$2:$E$5,A2)</div>
 
  <img src="playing_cards_2.png"/>
 
@@ -4300,7 +4300,7 @@ If the digit to our right is less than the digit above it (which means its dial 
 
 <p>In C2 that's the formula</p>
 
-<div class="code">=VLOOKUP(B2,States!$A$1:<em>e</em>51,2,FALSE)</div>
+<div class="code">=VLOOKUP(B2,States!$A$1:$E$51,2,FALSE)</div>
 
 <p>which you can then fill down.</p>
 
@@ -5966,7 +5966,7 @@ If the digit to our right is less than the digit above it (which means its dial 
 
 <p>It might take a while to compute.  Once it finishes, we'll add a histogram to summarize the distribution.  In G2:G21, we'll have buckets from 1 up to 20 representing the longest streak in a sequence.  Then in H2, we'll count how many simulated sequences had the corresponding longest streak:</p>
 
-<div class="code">=COUNTIF(<em>e</em>2:<em>e</em>501,G2)</div>
+<div class="code">=COUNTIF($E$2:$E$501,G2)</div>
 
 <p>And in I2 we'll convert this to a percentage by dividing by 500, the number of simulations:</p>
 
@@ -6316,11 +6316,11 @@ If the digit to our right is less than the digit above it (which means its dial 
 
 <p>In L2 we want to count the weights in E2:E84 that are greater than or equal to K2 but less than K3. This is just</p>
 
-<div class="code">{=SUM((<em>e</em>2:<em>e</em>82&gt;=K2)*(<em>e</em>2:<em>e</em>82&lt;K3))}</div>
+<div class="code">{=SUM(($E$2:$E$82&gt;=K2)*($E$2:$E$82&lt;K3))}</div>
 
 <p>We can copy and paste this formula down to to L3 and L4.  In L5 we don't want an upper bound, so there's just one condition to meet.  We can either use the "multiply by 1" trick</p>
 
-<div class="code">{=SUM(1*(<em>e</em>2:<em>e</em>82&gt;=K5))}</div>
+<div class="code">{=SUM(1*($E$2:$E$82&gt;=K5))}</div>
 
 <p>or just use <span class="code">SUMIF()</span>.</p>
 
